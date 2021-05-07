@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Word and GIF Finder</title>
+		<style>
+			body, form{
+				margin: 0 auto;
+				max-width:800px;
+				overflow-x:hidden;
+			}
+			fieldset{
+				display: flex;
+			}
+			input#artist{
+				flex-grow:100;
+				margin: 0 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="search" method="get">
+			<legend>Dictionary/GIF Search</legend>
+			<fieldset>
+				<label for="Word"> Word Search:</label>
+				<input id="word" name="word" type="text" />
+				<input type="submit" value="Search" />
+			</fieldset>
+		</form>
+	</body>
+</html>
